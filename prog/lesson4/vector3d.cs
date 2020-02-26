@@ -1,5 +1,5 @@
 public struct vector3d{
-	public double x,y,z;
+	public double x,y,z;//due to this I can use one vector input less in the functions 
 	
 	
 //constructor
@@ -27,20 +27,22 @@ public struct vector3d{
 
 	
 	//scalar product
-	public static double dot_product(vector3d u, vector3d v) {
+	public static double dot_product( vector3d v) {
 	double r=0;
-	for(int i=0;i=2; i++) r=r+u[i]*v[i];
+	r=this.x*v[0]+this.y*v[1]+this.z*v[2];
 	return r}
 
-	public static vector3d vector_product(vector3d u, vector3d v){
+	public static vector3d vector_product( vector3d v){
 	vector3d r=new vector3d();
-	r[0]=u[1]*v[2]-u[2]*v[1];
-	r[1]=u[2]*v[0]-u[0]*v[2];
-	r[2]=u[0]*v[1]-u[1]*v[0];
+	r[0]=this.y*v[2]-this.z*v[1];
+	r[1]=this.z*v[0]-this.x*v[2];
+	r[2]=this.x*v[1]-this.y*v[0];
 	
 	return r}
 	
 	public static double magnitude(){}
+	double normsquared=this.x*this.x+this.y*this.y+this.z*this.z);
+	return normsquared;
 	//magnitude is for checking which number is greater, remember root of sqare of big number
 	
 

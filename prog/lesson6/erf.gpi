@@ -1,0 +1,9 @@
+set term svg
+set out "Erf.svg"
+set xlabel "x"
+set ylabel "y"
+set key bottom left
+set tics out
+set grid
+set title "Error function"
+plot [][] "out.erf.txt" with lines
