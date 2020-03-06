@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{graphicx}
+\title{The cosine function}
+\author{Anna Poelz}
+\begin{document}
+\maketitle
+The cosine function can be defined through the differential equation
+\begin{equation}
+	y''(x)=-y(x)
+\end{equation}
+with the boundary conditions
+\begin{equation}
+	y(0)=1\\
+	y'(0)=0.
+\end{equation}
+
+The result was obtained using ode.rk23, a Runge-Kutta ODE-solver provided by D.V.Fedorov. 
+
+\begin{figure}
+	\input{plot.tex}
+	\caption{Illustration of the cosine function}
+\end{figure}
+
+
+\end{document}

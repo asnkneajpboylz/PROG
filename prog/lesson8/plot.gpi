@@ -1,0 +1,4 @@
+set term svg 
+set out "plot.svg"
+set tics out
+plot "out.txt" w l 
