@@ -1,0 +1,7 @@
+set term svg
+set out "lsquare.svg"
+set grid
+set title "Least squares fitting"
+plot \
+"outfit.txt" with lines \
+,"outdata.txt" with points pt 5 ps 1 \
