@@ -202,4 +202,4 @@ solution x      4.96     -0.173
 N0=143.208234119677
 lambda=-0.17271311200262
 The half life time calculated via the fitting function is ln(2)/lambda= 4.01328638296686 days
-The actual half life time is 3.6 day.
+The actual half life time is 3.6 days.

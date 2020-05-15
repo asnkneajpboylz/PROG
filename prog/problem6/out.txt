@@ -1,0 +1,4 @@
+Problem A: Integration sqrt(x) from 0 to 1:
+result: 0.666953909054655 with 16 evaluations, exact result 0.666666666666667
+Problem B: Integration 4*sqrt(1-x*x) from 0 to 1:
+result: 3.14183457802727 with 28 evaluations, exact result 3.14159265358979

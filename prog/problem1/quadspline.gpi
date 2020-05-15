@@ -1,0 +1,7 @@
+set term svg
+set out "quadspline.svg"
+set xlabel "x"
+set title "quadratic spline sin(x)"
+plot [][] "out.txt" using ($1):($4) with lines title "quadratic spline", \
+	"out.txt" using ($1):($5) with lines title "integral evaluated between 0 and x",\
+	"out.txt" using ($1):($6) with lines title "derivative evaluated at x"

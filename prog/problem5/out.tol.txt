@@ -1,0 +1,60 @@
+
+Tolerance test of the RK12 solution of the harmonic oscillator differential equation
+Desired tolerance:  0.000114112000805987
+Achieved tolerance: -1.1311144959176
+The desired tolerance has been achieved.
+
+Tolerance test of the RK12 solution of the harmonic oscillator differential equation
+Desired tolerance:  0.000114112000805987
+Achieved tolerance: -1.1311144959176
+The desired tolerance has been achieved.
+
+Tolerance test of the RK12 solution of the harmonic oscillator differential equation
+Desired tolerance:  0.000168761977177373
+Achieved tolerance: -1.4136923043328
+The desired tolerance has been achieved.
+
+Tolerance test of the RK12 solution of the harmonic oscillator differential equation
+Desired tolerance:  0.000168761977177373
+Achieved tolerance: -1.4136923043328
+The desired tolerance has been achieved.
+
+Tolerance test of the RK12 solution of the harmonic oscillator differential equation
+Desired tolerance:  0.000168761977177373
+Achieved tolerance: -1.4136923043328
+The desired tolerance has been achieved.
+
+Tolerance test of the RK12 solution of the harmonic oscillator differential equation
+Desired tolerance:  0.000168761977177373
+Achieved tolerance: -1.4136923043328
+The desired tolerance has been achieved.
+
+Tolerance test of the RK12 solution of the harmonic oscillator differential equation
+Desired tolerance:  0.00018414709848079
+Achieved tolerance: -0.301176076006348
+The desired tolerance has been achieved.
+
+Tolerance test of the RK12 solution of the harmonic oscillator differential equation
+Desired tolerance:  0.000190929742682568
+Achieved tolerance: -1.32545457059184
+The desired tolerance has been achieved.
+
+Tolerance test of the RK12 solution of the harmonic oscillator differential equation
+Desired tolerance:  0.00190929742682568
+Achieved tolerance: -1.32563388188227
+The desired tolerance has been achieved.
+
+Tolerance test of the RK12 solution of the harmonic oscillator differential equation
+Desired tolerance:  4.10757253368615E-05
+Achieved tolerance: 1.24290009093081
+TEST FAILED! The desired tolerance has not been achieved.
+
+Tolerance test of the RK12 solution of the harmonic oscillator differential equation
+Desired tolerance:  0.00045597888911063
+Achieved tolerance: -0.294815842990205
+The desired tolerance has been achieved.
+
+Tolerance test of the RK12 solution of the harmonic oscillator differential equation
+Desired tolerance:  0.00045597888911063
+Achieved tolerance: -0.294815842990205
+The desired tolerance has been achieved.

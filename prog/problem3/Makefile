@@ -7,7 +7,7 @@ outfit.txt: main.exe
 main.exe: main.cs matlib.dll
 	mcs -reference:matlib.dll $<
 
-matlib.dll: matrix.cs vector.cs
+matlib.dll: matrix.cs vector.cs QR.cs
 	mcs -target:library -out:$@ $^  
 
 clean: 

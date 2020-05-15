@@ -1,0 +1,6 @@
+set term svg
+set out "linspline.svg"
+set xlabel "x"
+set title "linear spline sin(x)"
+plot [][] "out.txt" using ($1):($2) with lines title "linear spline", \
+	"out.txt" using ($1):($3) with lines title "integral evaluated between 0 and x"
