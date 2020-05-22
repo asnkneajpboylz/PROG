@@ -1,17 +1,25 @@
-DIR=~/pracpro/PROG/prog/problem3
-LIB=\
-    $(DIR)/vector.cs\
-    $(DIR)/matrix.cs\
-    $(DIR)/QR.cs
 
 out.txt: main.exe
 	mono $< >$@
 
-main.exe: main.cs roots.dll
-	mcs $< -r:roots.dll
+LIB= matlib.dll roots.dll
 
-roots.dll: roots.cs matlib.dll
-	mcs $< -t:library -r:matlib.dll -out:$@
+#main.exe: main.cs $(LIB)
+#	mcs $< -r:$(call clist, $(LIB))
 
-matlib.dll: $(LIB)
+#roots.dll: roots.cs matlib.dll
+#	mcs $< -t:library -r:matlib.dll -out:$@
+
+#matlib.dll: QR.cs vector.cs matrix.cs 
+#	mcs $^ -t:library -out:$@
+
+main.exe: main.cs math.dll
+	mcs $< -r:math.dll
+
+math.dll: vector.cs QR.cs roots.cs matrix.cs
 	mcs $^ -t:library -out:$@
+
+comma:=,
+empty:=
+space:=$(empty) $(empty)
+clist=$(subst $(space),$(comma),$(1))

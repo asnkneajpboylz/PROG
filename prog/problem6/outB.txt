@@ -1,0 +1,23 @@
+Comparison of different integration methods by using 3 functions
+eps=0.0001, acc=0.0001, upper bound=0, lower bound=1
+
+ 
+1/Sqrt(x)
+Analytic Result: 2
+Result: 1.67444423242458 Error: 0.0490115982360868 Calls: 17140
+Result: 1.99779905901957 Error: 0.0369871568883857 Calls: 52
+Result: 2.00002495541116 Calls: 8
+
+ 
+Log(x)/Sqrt(x)
+Analytic Result: -4
+Result: -1.92944716896599 Error: 0.182431340556947 Calls: 29972
+Result: -3.45710317398755 Error: 0.336328332377749 Calls: 272
+Result: -3.99976355149072 Calls: 88
+
+ 
+4*Sqrt(1-x*x)
+Analytic Result: 3.14159265358979
+Result: 3.17715548348911 Error: 0.0497936461687187 Calls: 3876
+Result: 2.899632127338 Error: 0.383561666006581 Calls: 6232
+Result: 3.14159265355797 Calls: 64

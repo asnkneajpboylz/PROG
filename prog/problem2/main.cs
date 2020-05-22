@@ -29,15 +29,15 @@ static vector qr_gs_solve(matrix Q,matrix R, vector b) {
 }
 
 static matrix qr_gs_inverse(matrix Q, matrix R) {
-matrix B=new matrix(R.size1,R.size1);
-vector sol=new vector(R.size1);
-vector E=new vector(R.size1);
-for(int i=0; i<R.size1; i++) {
-E[i]=1;
-sol=qr_gs_solve(Q,R,E);
-for(int j=0;j<R.size1;j++) B[j,i]=sol[j];
-E[i]=0;
-}
+	matrix B=new matrix(R.size1,R.size1);
+	vector sol=new vector(R.size1);
+	vector E=new vector(R.size1);
+	for(int i=0; i<R.size1; i++) {
+		E[i]=1;
+		sol=qr_gs_solve(Q,R,E);
+		for(int j=0;j<R.size1;j++) B[j,i]=sol[j];
+		E[i]=0;
+	}
 return B;}
 
 static int Main(){

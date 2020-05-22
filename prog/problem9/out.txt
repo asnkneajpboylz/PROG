@@ -1,0 +1,9 @@
+Two integrals calculated via Monte Carlo Integration
+Lower bound (0,0,0), upper bound (3.14, 3.14, 3.14)
+Evaluations: 50000
+
+x^2*y*z
+Results: integral estimate 248.58860372494, error 1.64345849076958
+
+1/(1-Cos(x)*Cos(y)*Cos(z))*1/(PI^3)
+Results: integral estimate 1.35641764304924, error 0.0113917895864927

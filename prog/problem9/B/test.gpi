@@ -1,0 +1,9 @@
+set term svg
+set out "test.svg"
+set title "Error Monte Carlo Method"
+set xlabel "N"
+set ylabel "Error"
+#set logscale xy
+plot "out.txt" using 1:2 title "Estim error"\
+,"out.txt" using 1:3 with lines title "Exact error"\
+,"out.txt" using 1:4 with lines title "O(1/sqrt(N))" 
