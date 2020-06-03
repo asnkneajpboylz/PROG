@@ -9,3 +9,6 @@ main_erf.exe: main_erf.cs math.dll
 
 math.dll: erf.cs
 	mcs $< -target:library -out:$@
+
+clean:
+	rm -f *.exe *.dll *.txt

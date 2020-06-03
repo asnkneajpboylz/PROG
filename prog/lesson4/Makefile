@@ -6,3 +6,6 @@ main.exe: main.cs vector3d.dll
 
 vector3.dll: vector3d.cs
 	mcs -target:library -out:$@ @<
+
+clean:
+	rm -f *.exe *.dll *.txt

@@ -38,12 +38,13 @@ public class main{
 	}
 	Write("\n \n");
 	
-	for (int k=0;k<3;k++){
-	  	
+	for (int k=0;k<3;k++){  	
 		Error.WriteLine($"{0} {0}");
-	    for(int i=0;i<n;i++){
-		  Error.WriteLine($"{(i+1.0)/(n+1)} {V[i,k]}");//c fragwürdig still oscillation
-	    }     Error.WriteLine($"{1} {0}");
-	 Error.Write("\n \n");          
+		for(int i=0;i<n;i++){
+		//double fact=Sign(V[0,k])/Sqrt(s);		
+		Error.WriteLine($"{(i+1.0)/(n+1)} {matrix.get(V,i,k)}");//c fragwürdig still oscillation        
+ 		}
+	 	Error.WriteLine($"{1} {0}");
+	 	Error.Write("\n \n");          
 	}	
 }}

@@ -8,4 +8,4 @@ matlib.dll: matrix.cs vector.cs
 	mcs -target:library -out:$@ $^	
 
 clean: 
-	rm -f *.exe *.txt *.dll
+	rm -f *.svg *.exe *.txt *.dll

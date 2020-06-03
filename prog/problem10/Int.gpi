@@ -1,0 +1,9 @@
+
+set term svg
+set out "Int.svg"
+set xlabel 'x'
+set ylabel 'y'
+set xzeroaxis
+set title "Integration of Cosine with ANN"
+plot "out.txt" index 3 using ($1):($2) title "analytic result"\
+	,"out.txt" index 4 with lines title "ANN integration"\

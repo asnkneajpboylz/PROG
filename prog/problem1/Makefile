@@ -17,4 +17,4 @@ matlib.dll: cspline.cs quadspline.cs
 	mcs -target:library -out:$@ $^
 
 clean:
-	rm -f *.exe
+	rm -f *.exe *.dll *.txt *.svg

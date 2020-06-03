@@ -1,0 +1,6 @@
+N0=143.208234119677
+lambda=-0.17271311200262
+The half life time calculated via the fitting function is ln(2)/lambda= 4.0 days
+The actual half life time is 3.6 days.
+Uncertainty for estimated halflife: 0.3 days
+The estimated value doesn't agree with the modern value

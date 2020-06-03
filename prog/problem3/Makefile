@@ -2,7 +2,7 @@ lsquare.svg: lsquare.gpi outfit.txt outdata.txt
 	gnuplot $<
 
 outfit.txt: main.exe
-	mono $< >$@ 
+	mono $< 1>$@ 2>Log
 
 main.exe: main.cs matlib.dll
 	mcs -reference:matlib.dll $<
@@ -11,7 +11,7 @@ matlib.dll: matrix.cs vector.cs QR.cs
 	mcs -target:library -out:$@ $^  
 
 clean: 
-	rm -f *.exe *.txt *.dll
+	rm -f *.svg *.exe *.txt *.dll
 
 outdata.txt: Makefile
 	echo '1 117' >$@

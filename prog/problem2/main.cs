@@ -28,6 +28,7 @@ static vector qr_gs_solve(matrix Q,matrix R, vector b) {
 	return x;
 }
 
+
 static matrix qr_gs_inverse(matrix Q, matrix R) {
 	matrix B=new matrix(R.size1,R.size1);
 	vector sol=new vector(R.size1);
@@ -39,7 +40,6 @@ static matrix qr_gs_inverse(matrix Q, matrix R) {
 		E[i]=0;
 	}
 return B;}
-
 static int Main(){
 	int n=3;
        	int m=3;

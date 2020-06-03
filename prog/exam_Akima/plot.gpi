@@ -1,0 +1,6 @@
+set term svg
+set out "plot.svg"
+set title "Akima sub-spline interpolation "
+plot [][-0.2:1.2]\
+	 "out.txt" with lines title "Akima"\
+	,"data.txt" with points pointtype 5 title "Interpolation data" 

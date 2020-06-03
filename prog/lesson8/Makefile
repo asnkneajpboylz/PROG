@@ -11,4 +11,4 @@ matlib.dll: vector.cs ode.cs
 	mcs -target:library -out:$@ $^
 
 clean:
-	rm -f *.dll *.exe log* out*
+	rm -f  *.svg *.dll *.exe log* out*

@@ -1,0 +1,11 @@
+
+set term svg
+set out "plot.svg"
+set title "Higgs fitting with Breit Wigner function"
+set xlabel "Energy"
+set ylabel "Signal"
+set xzeroaxis
+set yzeroaxis
+plot "data.txt" using 1:2:3 with errorbars title "experimental data"\
+, "outB.txt" using 1:2 with lines title "fit"
+

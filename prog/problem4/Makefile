@@ -21,4 +21,6 @@ matlib.dll: matrix.cs vector.cs
 	mcs -t:library -out:$@ $^
 
 clean:
-	rm -rf *-exe *.dll
+	rm -f *.exe *.dll *.txt *.svg
+
+

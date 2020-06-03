@@ -10,9 +10,9 @@ main.exe: main.cs matlib.dll
 
 matlib.dll: ode.cs vector.cs
 	mcs -target:library -out:$@ $^
+
 clean:
 	rm -f *.dll *exe out* *.svg
-
 $(PLOT): out.txt Makefile
 	echo '\
 	set term svg;\
@@ -39,11 +39,10 @@ $(PLOTB): outB.txt Makefile
 	set term svg;\
 	set out "$(PLOTB)";\
 	set title "SIR Model Denmark - June to August Tc=3";\
-	set xlabel "x";\
-	set ylabel "y";\
+	set xlabel "Persons";\
+	set ylabel "Days starting with the End of May";\
 	plot\
 	"outB.txt" using 1:2 title "Susceptible"\
 	,"outB.txt" using 1:3 title "Infected"\
 	,"outB.txt" using 1:4 title "Recovered"\
-	
 	'|gnuplot

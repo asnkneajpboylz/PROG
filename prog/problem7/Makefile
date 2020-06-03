@@ -19,6 +19,8 @@ main.exe: main.cs math.dll
 math.dll: vector.cs QR.cs roots.cs matrix.cs
 	mcs $^ -t:library -out:$@
 
+clean:
+	rm -f *.dll *exe out* *.svg
 comma:=,
 empty:=
 space:=$(empty) $(empty)

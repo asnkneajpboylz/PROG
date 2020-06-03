@@ -16,6 +16,8 @@ static int Main(){
 	WriteLine($"result: {result1[0]} with {eval} evaluations, exact result {2.0/3}");
 
 	eval=0;
+
+
 	Func<double,double> g2=(x) => {eval++; return 4*Sqrt(1-x*x);};
 	vector result2=integ.integr(g2,a,b,acc,eps);
 	WriteLine("Problem B: Integration 4*sqrt(1-x*x) from 0 to 1:");

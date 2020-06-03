@@ -1,0 +1,9 @@
+
+set term svg
+set out "Cos.svg"
+set xlabel 'x'
+set ylabel 'y'
+set xzeroaxis
+set title "Interpolation of Cosine with ANN"
+plot "out.txt" index 0 title "sample points"\
+	,"out.txt" index 2 with lines title "ANN interpolation"\

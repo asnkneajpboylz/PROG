@@ -7,3 +7,5 @@ main.exe: main.cs integ8.dll
 integ8.dll: integ8.cs
 	mcs $< -target:library -out:$@
 
+clean:
+	rm -f *.exe *.dll *.txt

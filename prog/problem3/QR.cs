@@ -24,4 +24,16 @@ public class QR{
 		}
 		return x;
 }
+
+	public static matrix inverse(matrix Q, matrix R) {
+		int n = Q.size1;
+		int m = Q.size2;
+		matrix B=new matrix(m,n);
+		vector E=new vector(n);
+		for(int i=0; i<n; i++) {
+			E[i]=1;
+			vector sol=qr_qs_solve(Q,R,E);
+			B[i]=sol;
+		}
+	return B;}
 }

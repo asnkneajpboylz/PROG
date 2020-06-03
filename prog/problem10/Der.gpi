@@ -1,0 +1,9 @@
+
+set term svg
+set out "Der.svg"
+set xlabel 'x'
+set ylabel 'y'
+set xzeroaxis
+set title "Derivative of Cosine with ANN"
+plot "out.txt" index 3 using ($1):($3) title "analytic reuslt"\
+	,"out.txt" index 5 with lines title "ANN derivative"\
