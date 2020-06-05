@@ -4,7 +4,7 @@ using static System.Math;
 public class main{
 	public static void Main() {
 
-	int n=90;
+	int n=60;
 	double s=1.0/(n+1);
 	matrix H = new matrix(n,n);
 	for(int i=0;i<n-1;i++){
@@ -14,31 +14,23 @@ public class main{
 		        }
 	matrix.set(H,n-1,n-1,-2);
 	matrix.scale(H,-1/s/s);
-	
 	matrix V = new matrix(n,n);
-	vector eigenval = new vector(n);
 	vector en=new vector(n);
-	jacobi ja= new jacobi();
-	for(int i=0;i<n;i++){
-		V[i,i]=1;       
-		eigenval[i]=H[i,i];
-	}	
-	do{
-	
-	en=eigenval.copy();
-	ja.cycsweep(H,eigenval,V);
-	}while((en-eigenval).norm() >0.001);
-	
+	int count=jacobi.cycsweep(H,en,V);
+		
 	V.print("V test");	
-	H.print("H test");
+	H.print("H new");
+	
+	en.print("eigenvalues");
+	
 	for (int k=0; k < n/3; k++){
 	    double exact = PI*PI*(k+1)*(k+1);
-	    double calculated = eigenval[k];
+	    double calculated = en[k];
 	    WriteLine($"{k} {calculated} {exact}");
 	}
 	Write("\n \n");
 	
-	for (int k=0;k<3;k++){  	
+	for (int k=0;k<4;k++){  	
 		Error.WriteLine($"{0} {0}");
 		for(int i=0;i<n;i++){
 		//double fact=Sign(V[0,k])/Sqrt(s);		

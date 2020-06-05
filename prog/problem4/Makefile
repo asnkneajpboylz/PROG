@@ -1,6 +1,7 @@
+all: boxfunc.svg out.txt outbox_text.txt 
+
 boxfunc.svg: boxfunc.gpi outbox_plot.txt 	
 	gnuplot $<
-
 
 outbox_text.txt outbox_plot.txt:mainbox.exe
 	mono mainbox.exe 1>outbox_text.txt  2>outbox_plot.txt

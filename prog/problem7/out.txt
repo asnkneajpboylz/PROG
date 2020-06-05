@@ -1,0 +1,3 @@
+eps 0.001
+Extremum of Function (root of gradient)         1          1 
+gradient(solution)  0.000133   -5.5e-05 

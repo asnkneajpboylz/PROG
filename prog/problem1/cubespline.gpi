@@ -1,0 +1,7 @@
+set term svg
+set out "cubespline.svg"
+set xlabel "x"
+set title "cubic spline sin(x)"
+plot [][] "out.txt" using ($1):($7) with lines title "cubic spline", \
+	"out.txt" using ($1):($8) with lines title "integral evaluated between 0 and x",\
+	"out.txt" using ($1):($9) with lines title "derivative evaluated at x"

@@ -18,12 +18,13 @@ class main{
 
 		Write("\n");
 		var cs=new cspline(x,y);
-		var quads=new quadspline(x,y);
+		var qua=new quadspline(x,y);
+		var cub=new cubespline(x,y);
 		double z=x[0];
 	        double step=(x[n-1]-x[0])/(N-1);
 		for(i=0; i<N;i++){
 			z=x[0]+i*step;
-			WriteLine($"{z} {cs.eval(z)} {cs.integ(z)} {quads.eval(z)} {quads.integ(z)} {quads.derive(z)}");
+			WriteLine($"{z} {cs.eval(z)} {cs.integ(z)} {qua.eval(z)} {qua.integ(z)} {qua.derive(z)} {cub.eval(z)} {cub.integ(z)} {cub.derive(z)}");
 		}
 		
 	//	Write($"test integration of sine from 0 to 2pi: {cs.integ(2*PI)}\n");

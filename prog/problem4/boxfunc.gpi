@@ -4,3 +4,4 @@ set title "Eigenfunctions"
 plot "outbox_plot.txt" index 0 using ($1):($2) with lines title "k=0"\
 	,"outbox_plot.txt" index 1 using ($1):($2) with lines title "k=1"\
 	,"outbox_plot.txt" index 2 using ($1):($2) with lines title "k=2"\
+	,"outbox_plot.txt" index 3 using ($1):($2) with lines title "k=3"\
