@@ -1,0 +1,14 @@
+ln_int=-3.99999969851602
+exact solution=-4
+
+ 
+gauss=1.77245411516459
+exact solution=1.77245385090552
+
+ 
+gamma(0)=1
+gamma(5)=119.999998692763
+gamma(10)=3634418.06676608
+exact solution=1
+exact solution=120
+exact solution=3628800

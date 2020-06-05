@@ -1,0 +1,7 @@
+test vector: (4,5,3)
+
+to String: (4,5,3)
+
+multiplication by 2, (8,10,6)
+
+dot_product, 100

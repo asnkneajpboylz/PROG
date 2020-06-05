@@ -1,0 +1,5 @@
+set term svg 
+set out "plot.svg"
+set tics out
+set title "Solution of ODE is logistic function"
+plot "out.txt" w l 
