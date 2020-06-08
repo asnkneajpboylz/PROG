@@ -1,6 +1,6 @@
-set term cairolatex input size 13cm,9cm 
+set term cairolatex input size 10cm,8cm 
 set out "plot.tex"
 set xlabel "x"
 set ylabel "y"
 set title "Cosine function"
-plot "out.txt" with lines
+plot "out.txt" with lines title "Cos(x)"

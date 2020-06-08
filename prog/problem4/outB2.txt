@@ -1,0 +1,2 @@
+First 2 values should be highest EVs      1.84       1.08      -1.27      -1.18     -0.813 
+all eigenvalues     -2.16     -0.574     -0.533       1.08       1.84 

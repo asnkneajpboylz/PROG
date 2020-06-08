@@ -1,0 +1,4 @@
+set term svg
+set out "plotOn3.svg"
+set title "Diagonalizing O(n^3)"
+plot "outB.txt" using ($1):($6) with lines title "milliseconds"

@@ -1,0 +1,9 @@
+set term svg
+set out "plotB.svg"
+set xzeroaxis
+set yzeroaxis
+set log y
+set title "Times for diagonalizing matrix\n clearly the row-method with only the first EV works best followed by the cyclic method"
+plot "outB.txt" using ($1):($2) title "Row-method, first EV"\
+	,"outB.txt" using ($1):($4) title "Row-method"\
+	,"outB.txt" using ($1):($6) title "Cyclic-method"

@@ -1,6 +1,8 @@
+
+
 using System;
 using static System.Math;
-public class jacobi{
+public partial class jacobi{
 	public static int cycsweep(matrix A,vector e, matrix V=null) {
 		int n=A.size1;
 		int count=0;
